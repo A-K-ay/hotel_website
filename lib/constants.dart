@@ -34,17 +34,17 @@ String sFamily1="Each individual room comes with its own attached bathroom. ";
 //RoomsHome
 
 //Photo link List
-
+//
 //Drive Image Link format
 //  Image.network('https://drive.google.com/uc?export=view&id=10vEy_qMQudVxp7tGnU0wMPM3-KXihBfz'),
 // Drive Image Link format
 List<String>imglinks= [
-  'Assets/Images/hall.jpeg','Assets/Images/Family_Club.jpg','Assets/Images/Gym.jpg','Assets/Images/lights1.jpg','Assets/Images/lights2.jpg','Assets/Images/Premium_Room.jpg','Assets/Images/restaurant.jpeg','Assets/Images/Restaurant2.jpg','Assets/Images/restingarea.jpg','Assets/Images/room3.jpeg','Assets/Images/room1.jpeg','Assets/Images/room3.jpeg','Assets/Images/room4.jpeg','Assets/Images/room5.jpg','Assets/Images/washroom.jpeg',
+  'https://drive.google.com/uc?export=view&id=1teLAu6UGOm66monSIEx9sOKBKplQ2qPt','https://drive.google.com/uc?export=view&id=1Vl1XX7olUGcwsSbrtOIGnyk_bobQI5te','https://drive.google.com/uc?export=view&id=1k6zAQ_b8R8uI4MXC20LLEzHOxJTv4RL0','https://drive.google.com/uc?export=view&id=1c_xz2cNO301kl-pEMvWwWFXSyJDa3ncn','https://drive.google.com/uc?export=view&id=1cPEDCVNbc0LcSjpUcEo8cOE6-E-I94yN','https://drive.google.com/uc?export=view&id=1RaYVONHPpxlLOSIdGdd1mamWRKRJ2YgE','https://drive.google.com/uc?export=view&id=1XIk8kKkchP_hkMv680mTgnQAOMsldlDO','https://drive.google.com/uc?export=view&id=1GnVesBAdzvPkahzXtd6l60ghpitdvQ9S','https://drive.google.com/uc?export=view&id=14l1wZFk-ZWoKYvfr5k5TOl1UF2St5GV9','https://drive.google.com/uc?export=view&id=1XSoq487JhfhlFNPAOG9QpsMskaOR9Q61','https://drive.google.com/uc?export=view&id=10Tm12mVq1r7YnwjDBE9naXBmuWlg118O','https://drive.google.com/uc?export=view&id=1XSoq487JhfhlFNPAOG9QpsMskaOR9Q61','https://drive.google.com/uc?export=view&id=1z1rDAJSenwTliMdGcjXRgNnrk54_5ex7','https://drive.google.com/uc?export=view&id=1nOlf7dan3h7xnxU9-lwItqngKU1tpkL7','https://drive.google.com/uc?export=view&id=116F-IFXfu_PIi4tzpq2grxlE18eVxNex',
 ];
 List<String>newimglinks= [
-  'Assets/Pics/1.jpg','Assets/Pics/2.jpg','Assets/Pics/3.jpg','Assets/Pics/4.jpg','Assets/Pics/5.jpg','Assets/Pics/6.jpg','Assets/Pics/7.jpg','Assets/Pics/8.jpg','Assets/Pics/9.jpg','Assets/Pics/10.jpg','Assets/Pics/11.jpg','Assets/Pics/12.jpg','Assets/Pics/13.jpg','Assets/Pics/14.jpg','Assets/Pics/15.jpg',
+  'https://drive.google.com/uc?export=view&id=1OpyovgnKL__6KxxCO6RSiEvC2hobwjdh','https://drive.google.com/uc?export=view&id=1Hwuol_0ZXIHprz9JF6Xu0DVq7EW5OgLP','https://drive.google.com/uc?export=view&id=15TrCDGLdzMqwi9C2rZmIUTQgDu1LjGcZ','https://drive.google.com/uc?export=view&id=1IZ0OBqfbbr3MUlRPThCaXhd8qKYKqVd6','https://drive.google.com/uc?export=view&id=12CPd0HAku4O2xzsq2EIbwddC8VhR0Sgg','https://drive.google.com/uc?export=view&id=1T2TzNUpJvCk2Zmmu1wEDBXswF8vOzT_M','https://drive.google.com/uc?export=view&id=1f_g1Dzuh0norvvClf3282J46P-Wicuug','https://drive.google.com/uc?export=view&id=1gkvvma9DjasCOs7APBMT6ay_K0g6WfYT','https://drive.google.com/uc?export=view&id=106JgjT2pSogHgEbY1vV3uD8b0l_OqhBm','https://drive.google.com/uc?export=view&id=14ch0SgyL10sFjPmMZhBg9EF65L6oYtsX','https://drive.google.com/uc?export=view&id=1EP_VtNTALcRuNMqhabahlsQDHH9c9Amo','https://drive.google.com/uc?export=view&id=1MrzDtwLezQHjyi2RqK3Xrdn34itdTBdV','https://drive.google.com/uc?export=view&id=1erMA-BzR2vGt99T9UN-Ob_Yp1hv2HBS4','https://drive.google.com/uc?export=view&id=1xzpLJXDnKDcwgnzrySjMwCRVCtFY_c1q','https://drive.google.com/uc?export=view&id=1ykz5xQpzb-J9kOp_U6wZ_hZAGIE_Djt5',
 ];List<String>cImglinks= [
-  'Assets/Pics/1.jpg','Assets/Pics/2.jpg','Assets/Pics/3.jpg','Assets/Pics/4.jpg','Assets/Pics/5.jpg','Assets/Pics/6.jpg','Assets/Pics/7.jpg','Assets/Pics/8.jpg',
+  'https://drive.google.com/uc?export=view&id=1OpyovgnKL__6KxxCO6RSiEvC2hobwjdh','https://drive.google.com/uc?export=view&id=1Hwuol_0ZXIHprz9JF6Xu0DVq7EW5OgLP','https://drive.google.com/uc?export=view&id=15TrCDGLdzMqwi9C2rZmIUTQgDu1LjGcZ','https://drive.google.com/uc?export=view&id=1IZ0OBqfbbr3MUlRPThCaXhd8qKYKqVd6','https://drive.google.com/uc?export=view&id=12CPd0HAku4O2xzsq2EIbwddC8VhR0Sgg','https://drive.google.com/uc?export=view&id=1T2TzNUpJvCk2Zmmu1wEDBXswF8vOzT_M','https://drive.google.com/uc?export=view&id=1f_g1Dzuh0norvvClf3282J46P-Wicuug','https://drive.google.com/uc?export=view&id=1gkvvma9DjasCOs7APBMT6ay_K0g6WfYT',
 ];
 // Photo link List
 //Strings End

@@ -25,8 +25,8 @@ class Map extends StatelessWidget {
           children: [
             Stack(
               children: [
-                Image.asset(
-                  'Assets/Images/MapSnow.jpg',
+                Image.network(
+                  'https://drive.google.com/uc?export=view&id=148YcTxaJEK2jE7_9YUsYi2BxkArK7K1-',
                   height: 350,
                 ),
                 Positioned(
@@ -43,7 +43,7 @@ class Map extends StatelessWidget {
                           },
                           icon: Icon(Icons.directions),
                         ),
-                        Text("Directions")
+                        Text("Directions",style: TextStyle(fontFamily: "Playfair"),)
                       ],
                     )),
 
@@ -60,7 +60,8 @@ class Map extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: kGoldColor),
+                      color: kGoldColor,
+                      fontFamily: "Playfair"),
                 ),
                 SizedBox(
                   height: 16,
@@ -87,7 +88,8 @@ class Map extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
-                                color: kGoldColor),
+                                color: kGoldColor,
+                                fontFamily: "Playfair"),
                           ),
                           Text(
                             '9816047324',
@@ -105,7 +107,8 @@ class Map extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
-                              color: kGoldColor),
+                              color: kGoldColor,
+                              fontFamily: "Playfair"),
                         ),
                         Text(
                           'SnowBloomResort@gmail.com',

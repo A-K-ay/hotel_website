@@ -14,13 +14,14 @@ class Rooms extends StatelessWidget {
   Widget build(BuildContext context) {
     return Responsive.isMobile(context)?MRooms() :Scaffold(
       body: KeyPress(
+        drag: 2.3,
         child: Column(
           children: [
             TopNavBar(),
             SizedBox(height: 80,),
-            RoomsCard(img: 'Assets/Pics/5.jpg',heading: 'Classic Room',text1: sClassic,text2: "Accommodation for 2 Adults",text3: sClassic1,),
-            RoomsCard(img: 'Assets/Pics/1.jpg',heading: 'Premium Room',text1: sPremium,text2: "Accommodation for 2 Adults",text3: sPremium1),
-            RoomsCard(img: 'Assets/Images/Family_Club.jpg',heading: 'Family Suite',text1: sFamily,text2: "Accommodation for 4 Adults",text3: sFamily1),
+            RoomsCard(img: 'https://drive.google.com/uc?export=view&id=15TrCDGLdzMqwi9C2rZmIUTQgDu1LjGcZ',heading: 'Classic Room',text1: sClassic,text2: "Accommodation for 2 Adults",text3: sClassic1,),
+            RoomsCard(img: 'https://drive.google.com/uc?export=view&id=1OpyovgnKL__6KxxCO6RSiEvC2hobwjdh',heading: 'Premium Room',text1: sPremium,text2: "Accommodation for 2 Adults",text3: sPremium1),
+            RoomsCard(img: 'https://drive.google.com/uc?export=view&id=1MrzDtwLezQHjyi2RqK3Xrdn34itdTBdV',heading: 'Family Suite',text1: sFamily,text2: "Accommodation for 4 Adults",text3: sFamily1),
             SizedBox(height: 80,),
             AmenitiesHome(),
             SizedBox(height: 80,),
@@ -69,7 +70,7 @@ class RoomsCard extends StatelessWidget {
             ClipRRect(borderRadius: BorderRadius.only(
         topLeft: Radius.circular(10),
           bottomLeft: Radius.circular(10),
-      ),child: Image.asset(img,height: 350, )),
+      ),child: Image.network(img,height: 350, )),
             Expanded(
               child: Padding(
                 padding:  EdgeInsets.symmetric(vertical:16.0,horizontal: 80),
@@ -79,19 +80,19 @@ class RoomsCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Text(heading,style: TextStyle(fontSize: 28,fontWeight: FontWeight.w500),),
+                      Text(heading,style: TextStyle(fontSize: 28,fontWeight: FontWeight.w500,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text(text1,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500),),
+                      Text(text1,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text(text3,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500),),
+                      Text(text3,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text(text2,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500),),
+                      Text(text2,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
                       FlatButton(onPressed: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context) => ContactUs(title: 'ContactUs',)));
                       },child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text('Send Inquiry'),
+                        child: Text('Send Inquiry',),
                       ),hoverColor: Colors.yellowAccent,color: Colors.yellow,textColor: Colors.black87,),
                     ],
                   ),

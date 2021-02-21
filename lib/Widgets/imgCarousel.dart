@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:hotel_website/Animations/fadeInAnimation.dart';
 import 'package:hotel_website/Widgets/responsive.dart';
 import 'package:hotel_website/constants.dart';
 
 class ImgCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double sWidth = MediaQuery. of(context). size. width;
-    double sHight = MediaQuery. of(context). size. height;
+
     return Row(
       children: [
         Flexible(
@@ -59,7 +59,7 @@ class ImgCarousel extends StatelessWidget {
                     child: Center(
                         child: ColorFiltered(
                           colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.0), BlendMode.darken),
-                          child: Image.asset(item, fit: BoxFit.fill
+                          child: Image.network(item, fit: BoxFit.fill
                               , width: Responsive.sWidth(context)*.8 ),
                         ),
                     ),
@@ -95,17 +95,17 @@ class ImgCarousel extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('...',style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold,color: kGoldColor),),
+                    FadeAnimation(delay:2,child:Text('...',style: TextStyle(fontSize: 28,fontFamily: "Playfair",fontWeight: FontWeight.bold,color: kGoldColor),) ),
                     SizedBox(height: 10,),
-                    Text(sManali,style: TextStyle(fontSize: 16,color: Colors.black87),),
+                    FadeAnimation(delay:2.1,child: Text(sManali,style: TextStyle(fontSize: 16,fontFamily: "Playfair",color: Colors.black87),)),
                     SizedBox(height: 10,),
-                    Text(SourStory1,style: TextStyle(fontSize: 16,color: Colors.black87),),
+                    FadeAnimation(delay:2.2,child:  Text(SourStory1,style: TextStyle(fontSize: 16,fontFamily: "Playfair",color: Colors.black87),),),
                     SizedBox(height: 10,),
-                    Text(SourStory2,style: TextStyle(fontSize: 16,color: Colors.black87),),
+                    FadeAnimation(delay: 2.3,child: Text(SourStory2,style: TextStyle(fontSize: 16,fontFamily: "Playfair",color: Colors.black87),)),
                     SizedBox(height: 10,),
-                    Text("Why Snow Bloom ?",style: TextStyle(fontFamily: "Pacifico",fontSize: 18,color: kGoldColor,fontWeight: FontWeight.bold),),
+                    FadeAnimation(delay: 2.4,child:Text("Why Snow Bloom ?",style: TextStyle(fontFamily: "Pacifico",fontSize: 18,color: kGoldColor,fontWeight: FontWeight.bold),) ,),
                     SizedBox(height: 12,),
-                    Text(sWhySnow,style: TextStyle(fontSize: 16,color: Colors.black87),),
+                    FadeAnimation(delay: 2.5,child: Text(sWhySnow,style: TextStyle(fontSize: 16,fontFamily: "Playfair",color: Colors.black87),)),
                   ],
                 ),
               ),

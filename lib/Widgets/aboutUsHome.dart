@@ -13,7 +13,7 @@ class AboutUSHome extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset('Assets/Logos/logofit.png',height: 200,width: 200,),
+            Image.network('https://drive.google.com/uc?export=view&id=1A47unG6XPSriUnqhv6-ZhX5ZJ328e0OY',height: 200,width: 200,),
             SizedBox(height: 2,width: 300,child: Container(color: kCoolBlack,),),
             SizedBox(height: 24,),
             Column(
@@ -28,7 +28,7 @@ class AboutUSHome extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Phone',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: kGoldColor),),
+                        Text('Phone',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: kGoldColor,fontFamily: "Playfair"),),
                         Text('9816047324',style: TextStyle(fontSize: 12,color: kGoldColor.withOpacity(.6)),),
 
                       ],
@@ -37,7 +37,7 @@ class AboutUSHome extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Email',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: kGoldColor),),
+                        Text('Email',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: kGoldColor,fontFamily: "Playfair"),),
                         Text('SnowBloomResort@gmail.com',style: TextStyle(fontSize: 12,color: kGoldColor.withOpacity(.6),),)
                       ],
                     ),

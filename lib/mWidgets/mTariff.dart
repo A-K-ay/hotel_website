@@ -32,38 +32,38 @@ class MTariff extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Text('TARIFF 3 NIGHTS 4 DAYS',style: TextStyle(fontSize: !Responsive.isMobile(context)?24 :16,),),
+                          child: Text('TARIFF 3 NIGHTS 4 DAYS',style: TextStyle(fontFamily: "Playfair",fontSize: !Responsive.isMobile(context)?24 :16,),),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Text('Low Season Period: 5th Jan - 14th April, 15th July - 20 Dec.',style: TextStyle(fontSize: !Responsive.isMobile(context)?16 :10,),),
+                          child: Text('Low Season Period: 5th Jan - 14th April, 15th July - 20 Dec.',style: TextStyle(fontFamily: "Playfair",fontSize: !Responsive.isMobile(context)?16 :10,),),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Text('High Season Period: 15th April - 14th July, 21th Dec -4 Jan, Special Holidays & long Weekends',style: TextStyle(fontSize: !Responsive.isMobile(context)?16 :10,),),
+                          child: Text('High Season Period: 15th April - 14th July, 21th Dec -4 Jan, Special Holidays & long Weekends',style: TextStyle(fontSize: !Responsive.isMobile(context)?16 :10,fontFamily: "Playfair"),),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Text('Low Season:',style: TextStyle(fontSize: !Responsive.isMobile(context)?24 :16,),),
+                          child: Text('Low Season:',style: TextStyle(fontSize: !Responsive.isMobile(context)?24 :16,fontFamily: "Playfair",),),
                         ),
                         DataTable(
                           columns: const <DataColumn>[
                             DataColumn(
                               label: Text(
                                 'Category',
-                                style: TextStyle(fontStyle: FontStyle.italic),
+                                style: TextStyle(fontStyle: FontStyle.italic,fontFamily: "Playfair"),
                               ),
                             ),
                             DataColumn(
                               label: Text(
                                 'CPAI',
-                                style: TextStyle(fontStyle: FontStyle.italic),
+                                style: TextStyle(fontStyle: FontStyle.italic,fontFamily: "Playfair"),
                               ),
                             ),
                             DataColumn(
                               label: Text(
                                 'MAPI',
-                                style: TextStyle(fontStyle: FontStyle.italic),
+                                style: TextStyle(fontStyle: FontStyle.italic,fontFamily: "Playfair"),
                               ),
                             ),
                           ],
@@ -105,26 +105,26 @@ class MTariff extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Text('High Season:',style: TextStyle(fontSize: !Responsive.isMobile(context)?24 :16,),),
+                          child: Text('High Season:',style: TextStyle(fontSize: !Responsive.isMobile(context)?24 :16,fontFamily: "Playfair"),),
                         ),
                         DataTable(
                           columns: const <DataColumn>[
                             DataColumn(
                               label: Text(
                                 'Category',
-                                style: TextStyle(fontStyle: FontStyle.italic),
+                                style: TextStyle(fontStyle: FontStyle.italic,fontFamily: "Playfair"),
                               ),
                             ),
                             DataColumn(
                               label: Text(
                                 'CPAI',
-                                style: TextStyle(fontStyle: FontStyle.italic),
+                                style: TextStyle(fontStyle: FontStyle.italic,fontFamily: "Playfair"),
                               ),
                             ),
                             DataColumn(
                               label: Text(
                                 'MAPI',
-                                style: TextStyle(fontStyle: FontStyle.italic),
+                                style: TextStyle(fontStyle: FontStyle.italic,fontFamily: "Playfair"),
                               ),
                             ),
                           ],
@@ -173,7 +173,7 @@ class MTariff extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(left:16.0),
-                          child: Text("Package Inclusions",style: TextStyle(fontSize: 16),
+                          child: Text("Package Inclusions",style: TextStyle(fontSize: 16,fontFamily: "Playfair"),
                           ),
                         ),
                         SizedBox(height: 16,),
@@ -189,7 +189,7 @@ class MTariff extends StatelessWidget {
                         SizedBox(height: 32,),
                         Padding(
                           padding: const EdgeInsets.only(left:16.0),
-                          child: Text("Terms & Conditions",style: TextStyle(fontSize: 16),
+                          child: Text("Terms & Conditions",style: TextStyle(fontSize: 16,fontFamily: "Playfair"),
                           ),
                         ),
                         SizedBox(height: 16,),
@@ -202,7 +202,7 @@ class MTariff extends StatelessWidget {
                         SizedBox(height: 32,),
                         Padding(
                           padding: const EdgeInsets.only(left:16.0),
-                          child: Text("Cancellation Policy",style: TextStyle(fontSize: 16),
+                          child: Text("Cancellation Policy",style: TextStyle(fontSize: 16,fontFamily: "Playfair"),
                           ),
                         ),
                         SizedBox(height: 16,),

@@ -7,7 +7,7 @@ class MAmenitiesHome extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Text('Amenities',style: TextStyle(fontSize: 24,color: Colors.black87),),
+          Text('Amenities',style: TextStyle(fontSize: 24,fontFamily: "Playfair",color: Colors.black87),),
           SizedBox(height: 16,),
           Wrap(
             children: [
@@ -50,7 +50,7 @@ class AmenitiesCard extends StatelessWidget {
       child: Column(
         children: [
           Icon(icon,size: 24,color: kCoolBlack,),
-          Text(text,style: TextStyle(fontSize: 10,color: Colors.black),),
+          Text(text,style: TextStyle(fontSize: 10,color: Colors.black,fontFamily: "Playfair"),),
         ],
       ),
     );

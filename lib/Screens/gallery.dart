@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:hotel_website/Screens/keyPress.dart';
 import 'package:hotel_website/Screens/mGallery.dart';
+import 'package:hotel_website/Widgets/aboutUsHome.dart';
 import 'package:hotel_website/Widgets/responsive.dart';
 import 'package:hotel_website/Widgets/topNavBar.dart';
 import 'package:hotel_website/constants.dart';
@@ -12,6 +13,7 @@ class Gallery extends StatelessWidget {
   Widget build(BuildContext context) {
     return Responsive.isMobile(context)?MGallery() :Scaffold(
       body: KeyPress(
+        drag: 5.8,
         child: Column(
           children: [
             TopNavBar(),
@@ -24,7 +26,7 @@ class Gallery extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical:90.0,horizontal: 16,),
                   child: Material(
                       elevation: 5,
-                      child: Image.asset(imglinks[index],fit: BoxFit.fill,
+                      child: Image.network(imglinks[index],fit: BoxFit.fill,
                   )),
                 );
               }),
@@ -37,12 +39,13 @@ class Gallery extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical:90.0,horizontal: 16,),
                   child: Material(
                       elevation: 5,
-                      child: Image.asset(
+                      child: Image.network(
                         newimglinks[index],fit: BoxFit.fill,
                       )),
                 );
               }),
             ),
+            AboutUSHome()
           ],
         ),
       ),

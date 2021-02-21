@@ -22,6 +22,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: KeyPress(
+        drag: 5,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -37,12 +38,14 @@ class HomeScreen extends StatelessWidget {
                   style: TextStyle(
                       fontSize: !Responsive.isMobile(context)?25 :11,
                       fontWeight: FontWeight.bold,
-                      color: kLogoBgColor),
+                      color: kLogoBgColor,
+                    fontFamily: "Pacifico"
+                  ),
                 ),
               ),
             ),
             !Responsive.isMobile(context)?SizedBox.shrink() :MOurStoryHome(),
-            !Responsive.isMobile(context)?SizedBox.shrink() :Image.asset('Assets/Images/winter.jpg',width: double.infinity,),
+            !Responsive.isMobile(context)?SizedBox.shrink() :Image.network('https://drive.google.com/uc?export=view&id=1i8SG-RiMiuyhaN0ywIVaxp40qEYBE0jo',width: double.infinity,),
             SizedBox(height: 16,),
             !Responsive.isMobile(context)?RoomsHome():MRoomsHome(),
             SizedBox(height: 16,),

@@ -17,7 +17,7 @@ class MTopNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Image.asset('Assets/Logos/logofit.png',height: 50,width: 50,),
+            Image.network('https://drive.google.com/uc?export=view&id=1A47unG6XPSriUnqhv6-ZhX5ZJ328e0OY',height: 50,width: 50,),
             SizedBox(width: 20,),
             GestureDetector(onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));

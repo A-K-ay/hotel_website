@@ -15,6 +15,7 @@ class AboutUs extends StatelessWidget {
     return Responsive.isMobile(context)?MAboutUs() : Scaffold(
       backgroundColor: kLogoBgColor,
       body: KeyPress(
+        drag: 1.3,
         child: Column(
           children: [
             TopNavBar(),
@@ -43,21 +44,21 @@ class AboutUs extends StatelessWidget {
                   padding: const EdgeInsets.all(32.0),
                   child: Column(
                     children: [
-                      Text('OUR STORY~',style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold,color: Colors.white),),
+                      Text('OUR STORY~',style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold,color: Colors.white,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text(SourStory1,style: TextStyle(fontSize: 16,color: Colors.white),),
+                      Text(SourStory1,style: TextStyle(fontSize: 16,color: Colors.white,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text(SourStory2,style: TextStyle(fontSize: 16,color: Colors.white),),
+                      Text(SourStory2,style: TextStyle(fontSize: 16,color: Colors.white,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text(SourStory3,style: TextStyle(fontSize: 16,color: Colors.white),),
+                      Text(SourStory3,style: TextStyle(fontSize: 16,color: Colors.white,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text("Why Snow Bloom ?",style: TextStyle(fontSize: 16,color: Colors.white,fontWeight: FontWeight.bold),),
+                      Text("Why Snow Bloom ?",style: TextStyle(fontSize: 16,color: Colors.white,fontWeight: FontWeight.bold,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text(sWhySnow,style: TextStyle(fontSize: 16,color: Colors.white),),
+                      Text(sWhySnow,style: TextStyle(fontSize: 16,color: Colors.white,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text(SourStory3,style: TextStyle(fontSize: 16,color: Colors.white),),
+                      Text(SourStory3,style: TextStyle(fontSize: 16,color: Colors.white,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
-                      Text(SourStory4,style: TextStyle(fontSize: 16,color: Colors.white),),
+                      Text(SourStory4,style: TextStyle(fontSize: 16,color: Colors.white,fontFamily: "Playfair"),),
                       SizedBox(height: 16,),
                       CarouselSlider(
                         options: CarouselOptions(
@@ -80,7 +81,7 @@ class AboutUs extends StatelessWidget {
                             child: Center(
                               child: ColorFiltered(
                                 colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.4), BlendMode.darken),
-                                child: Image.asset(item, fit: BoxFit.cover, width:sWidth ),
+                                child: Image.network(item, fit: BoxFit.cover, width:sWidth ),
                               ),
                             ),
                           ),

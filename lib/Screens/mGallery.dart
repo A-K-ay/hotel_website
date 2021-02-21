@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:hotel_website/Widgets/responsive.dart';
-import 'package:hotel_website/Widgets/topNavBar.dart';
 import 'package:hotel_website/constants.dart';
 import 'package:hotel_website/mWidgets/mAboutUsHome.dart';
 import 'package:hotel_website/mWidgets/mtopNavBar.dart';
@@ -37,7 +36,7 @@ class MGallery extends StatelessWidget {
                   ),
                   items: imglinks.map((item) => Container(
                     child: Center(
-                      child: Image.asset(item, fit: BoxFit.cover, width: Responsive.sWidth(context) ),
+                      child: Image.network(item, fit: BoxFit.cover, width: Responsive.sWidth(context) ),
                     ),
                   )).toList(),
                 ),),
@@ -62,7 +61,7 @@ class MGallery extends StatelessWidget {
                   ),
                   items: newimglinks.map((item) => Container(
                     child: Center(
-                      child: Image.asset(item, fit: BoxFit.cover, width: Responsive.sWidth(context) ),
+                      child: Image.network(item, fit: BoxFit.cover, width: Responsive.sWidth(context) ),
                     ),
                   )).toList(),
                 ),),

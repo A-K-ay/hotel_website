@@ -8,15 +8,15 @@ class MRoomsHome extends StatelessWidget {
       child: Container(
         child: Column(
           children: [
-            RoomCard(heading: 'Jacuzzi',img: 'Assets/Images/jacuzzi.jpg',text1: sMJacuzzi,),
+            RoomCard(heading: 'Jacuzzi',img: 'https://drive.google.com/uc?export=view&id=1qVexhvUvVyfZPJhHlULPlvQNSoAqgIH_',text1: sMJacuzzi,),
             SizedBox(height: 16,),
-            RoomCard2(heading: 'Restaurant',img: 'Assets/Images/restaurant.jpeg',text1: sMRestaurant,),
+            RoomCard2(heading: 'Restaurant',img: 'https://drive.google.com/uc?export=view&id=1XIk8kKkchP_hkMv680mTgnQAOMsldlDO',text1: sMRestaurant,),
             SizedBox(height: 16,),
-            RoomCard(heading: 'Room',img: 'Assets/Pics/1.jpg',text1: sMRoom,),
+            RoomCard(heading: 'Room',img: 'https://drive.google.com/uc?export=view&id=1OpyovgnKL__6KxxCO6RSiEvC2hobwjdh',text1: sMRoom,),
             SizedBox(height: 16,),
-            RoomCard2(heading: 'Gymnasium',img: 'Assets/Images/Gym.jpg',text1: sMGym,),
+            RoomCard2(heading: 'Gymnasium',img: 'https://drive.google.com/uc?export=view&id=1k6zAQ_b8R8uI4MXC20LLEzHOxJTv4RL0',text1: sMGym,),
             SizedBox(height: 16,),
-            RoomCard(heading: 'Spa',img: 'Assets/Images/spa.jpg',text1: sMSpa,),
+            RoomCard(heading: 'Spa',img: 'https://drive.google.com/uc?export=view&id=1vsLhm8mJ7zJGfvVf3Ljw6dnqXVC2OnrO',text1: sMSpa,),
 
 
           ],
@@ -44,7 +44,7 @@ class RoomCard extends StatelessWidget {
         children: [
           SizedBox(width: 8,),
           Expanded(
-            child: Image.asset(img,height: 130,width:180 ,),
+            child: Image.network(img,height: 130,width:180 ,),
           ),
           Expanded(
             child: Padding(
@@ -55,9 +55,9 @@ class RoomCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(height: 2,),
-                    Text(heading,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500),),
+                    Text(heading,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500,fontFamily: "Playfair"),),
                     SizedBox(height: 8,),
-                    Text(text1,style: TextStyle(fontSize: 10,),),
+                    Text(text1,style: TextStyle(fontSize: 10,fontFamily: "Playfair"),),
                   ],
                 ),
 
@@ -97,16 +97,16 @@ class RoomCard2 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(height: 2,),
-                    Text(heading,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500),),
+                    Text(heading,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500,fontFamily: "Playfair"),),
                     SizedBox(height: 8,),
-                    Text(text1,style: TextStyle(fontSize: 10,),),]
+                    Text(text1,style: TextStyle(fontSize: 10,fontFamily: "Playfair",),),]
                 ),
 
               ),
             ),
           ),
           Expanded(
-            child: Image.asset(img,height: 130,width:180 ,),
+            child: Image.network(img,height: 130,width:180 ,),
 
           ),
           SizedBox(width: 8,),

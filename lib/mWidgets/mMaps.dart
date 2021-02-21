@@ -22,7 +22,7 @@ class MMap extends StatelessWidget {
         color: Colors.white24,
         child: Stack(
           children: [
-            Image.asset('Assets/Images/MapSnow.jpg',height: 120,),
+            Image.network('https://drive.google.com/uc?export=view&id=148YcTxaJEK2jE7_9YUsYi2BxkArK7K1-',height: 120,),
             Positioned(
                 right: 20,
                 top: 20,
@@ -37,7 +37,7 @@ class MMap extends StatelessWidget {
                       },
                       icon: Icon(Icons.directions),
                     ),
-                    Text("Directions",style: TextStyle(fontSize: 8),)
+                    Text("Directions",style: TextStyle(fontSize: 8,fontFamily: "Playfair"),)
                   ],
                 )),
           ],

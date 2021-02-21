@@ -28,16 +28,16 @@ class MImgCarousel extends StatelessWidget {
             child: Center(
                 child: ColorFiltered(
                   colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.0), BlendMode.darken),
-                  child: Image.asset(item, fit: BoxFit.cover, width: Responsive.sWidth(context) ),
+                  child: Image.network(item, fit: BoxFit.cover, width: Responsive.sWidth(context) ),
                 ),
             ),
           )).toList(),
         ),
         Positioned(child: Column(
           children: [
-            Text('SNOW BLOOM RESORT & SPA',style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold,color: Colors.white),),
+            Text('SNOW BLOOM RESORT & SPA',style: TextStyle(fontSize: 50,fontFamily: "Playfair",fontWeight: FontWeight.bold,color: Colors.white),),
             // Text('Resorts & Spa ',style: TextStyle(color: Colors.white,fontSize: 30),),
-            Text('Discover A new Lifestyle ',style: TextStyle(fontSize: 30,color: Colors.white),),
+            Text('Discover A new Lifestyle ',style: TextStyle(fontSize: 30,fontFamily: "Playfair",color: Colors.white),),
           ],
         ),left: 100,top:200,)
       ],
